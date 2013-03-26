@@ -1,0 +1,32 @@
+@import "fonts";
+@import "normalize";
+
+@import "settings"; // contains generic identity overwritings
+@import "apps_settings";
+@import "foundation";
+
+
+/* Identity SCSS */
+
+
+
+
+
+
+/* Responsive stuffs */
+
+@media screen and (max-width: 790px) {
+    .whitebox {
+        box-shadow: none;
+    }
+
+    .margin-kill {
+        margin-left: 0;
+    }
+
+    .row.stroked,
+    .row.small-fix {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

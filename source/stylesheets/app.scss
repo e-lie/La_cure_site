@@ -1,0 +1,57 @@
+@import "identity";
+
+/* La Cure Site specific */
+
+.index {
+    background: none, $sky;
+}
+
+.row {
+    background-color: white;
+    p {
+        //text-align: center;
+        padding: 00px 10px 0 30px;
+    }
+    &.sectionTitle {
+        padding-top: 30px;
+    }
+}
+
+.topBar {
+    background: $wood;
+    margin-top: 50px;
+    padding: 20px 0 20px 0;
+    nav, div, ul, a, li {
+        background: none !important;
+    }
+}
+
+#slogan {
+    background: none;
+}
+
+.shiftedLeft {
+    position: relative;
+    left: -60px;
+    background: red;
+    padding-left: 90px;
+}
+
+.clearing-thumbs {
+    list-style: none outside none;
+    li {
+        float: left;
+        margin: 10px;
+    }
+}
+
+
+#panorama {
+    z-index: 20;
+}
+
+.row {
+    z-index: 25;
+}
+
+
