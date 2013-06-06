@@ -59,7 +59,7 @@ $green: #66FF00;
 // Grid Variables
 //
 
-// $row-width: 62.5em;
+ $row-width: emCalc(840px);
 // $column-gutter: 8em;
 // $total-columns: 12;
 
@@ -958,7 +958,7 @@ $green: #66FF00;
 // $topbar-bg: #111;
 
 // Height and margin
- $topbar-height: 60px;
+ $topbar-height: 54px;
 // $topbar-margin-bottom: emCalc(30px);
 
 // Control Input height for top bar
@@ -966,12 +966,12 @@ $green: #66FF00;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: bold;
-// $topbar-title-font-size: emCalc(17px);
+ $topbar-title-font-size: emCalc(21px);
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: #fff;
 // $topbar-link-weight: bold;
-// $topbar-link-font-size: emCalc(13px);
+ $topbar-link-font-size: emCalc(16px);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: #333;
@@ -983,15 +983,15 @@ $green: #66FF00;
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase;
-// $topbar-menu-link-font-size: emCalc(13px);
+ $topbar-menu-link-font-size: emCalc(18px);
 // $topbar-menu-link-weight: bold;
 // $topbar-menu-link-color: #fff;
 // $topbar-menu-icon-color: #fff;
-// $topbar-menu-link-color-toggled: #888;
-// $topbar-menu-icon-color-toggled: #888;
+ $topbar-menu-link-color-toggled: #d8b;
+ $topbar-menu-icon-color-toggled: #d8b;
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
-// $topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout
+ $topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout
 // $topbar-media-query: "only screen and (min-width "#{$topbar-breakpoint}")";
 

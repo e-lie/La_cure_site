@@ -1,9 +1,23 @@
 @import "identity";
 
 /* La Cure Site specific */
+div {
+    border: 1px dotted black;
+}
 
-.index {
-    background: none, $sky;
+#parallax-bg {
+    background-color: $sky;
+    background: url("../images/fond_montagne_travail_p.jpg") center 0 repeat fixed
+    //background-image: url("../images/fond_montagne_travail.jpg");
+    //background-position-x: center;
+    //background-position-y: top;
+    //background-attachment: fixed;
+}
+
+.section-container.tabs{
+    p{
+        background-color:red;
+    }
 }
 
 .row {
@@ -16,6 +30,8 @@
         padding-top: 30px;
     }
 }
+
+
 
 .topBar {
     background: $wood;
@@ -31,6 +47,9 @@
 }
 
 .shiftedLeft {
+    background-image: url("logo-alsacreations-com.png"), url("soif.jpg");
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
     position: relative;
     left: -60px;
     background: red;
