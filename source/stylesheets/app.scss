@@ -39,21 +39,29 @@ h4{
 
     &.sectionBox{
         background-color: white;
-        background-image: -webkit-linear-gradient(rgba(53,30,9,0.1), rgba(53,30,9,0.3)), url("../images/background.jpg");
+        background-image: url("../images/texture-rondin2.png"), -webkit-linear-gradient(rgba(53,30,9,0.1), rgba(53,30,9,0.3)), url("../images/background.jpg");
         background-image: -moz-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.4)), url("../images/background.jpg");
         background-image: -o-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.4)), url("../images/background.jpg");
         background-image: linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.4)), url("../images/background.jpg");
-        background-repeat: no-repeat, repeat;
+        background-repeat: repeat-y, no-repeat, repeat;
+        background-position: 0 50px, 0 0, 0 0;
         
-        border-radius: emCalc(10px);
-        margin-bottom: emCalc(60px);
+        border-radius: emCalc(10px) emCalc(10px) emCalc(10px) 0;
+
+        padding-left: emCalc(50px);
     }
+    
+    &.separator{
+        height:90px;
+        background: url("../images/texture-rondin2.png") repeat-y;
+        background-position: 0 128px;
+    }
+
     .row {
         margin: 0;
     }
 
     &.sectionTitle {
-        padding-top: 30px;
     }
 
     &.containing{
@@ -64,7 +72,7 @@ h4{
 
 
 .topBar {
-    background: url("../images/fond_planche.png") center repeat-x $wood;
+    background: url("../images/fond_planche.jpg") center repeat $wood;
     margin-top: 30px;
     padding: 20px 0 20px 0;
     max-width: 1024px;
@@ -94,8 +102,72 @@ h4{
 
 }
 
+.tabs{
+
+
+    .content{
+        width:285px;
+        border-radius: 0 emCalc(8px) emCalc(8px) emCalc(8px);
+        border: none !important;
+        box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2);
+
+        img {
+            border-radius: emCalc(5px);
+        }
+    }
+
+    p{
+        border-radius: emCalc(8px) emCalc(8px) 0 0;
+        border: none !important;
+        a {
+            color: grey !important;
+            font-weight: bold !important;
+        } 
+    }
+}
+
+.orbit-container{
+    border: emCalc(15px) solid white;
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+
+    .orbit-caption{
+        color: rgba(80, 80, 80, 1) !important;
+        background-color: rgba(255, 255, 255, 0.4) !important;
+        font-size: 1em !important;
+    }
+
+    a.orbit-prev, a.orbit-next {
+        border-radius: 30px;
+        background: none;
+    }
+
+    a.orbit-prev:hover, a.orbit-next:hover {
+        border-radius: 30px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .orbit-progress{
+        display: none !important;
+    }
+
+    .orbit-slide-number{
+        display: none !important;
+    }
+}
+
 #firstRow {
     background: none;
+}
+    
+h2 {
+    color: white;
+    text-shadow: 0px 3px 1px rgba( 0, 0, 0, 0.2);
+}
+
+h3 {
+    color: rgba(255, 246, 225, 1);
+    text-shadow: 0px -2px 2px rgba( 255, 255, 255, 0.5);
 }
 
 #accroche {
@@ -103,13 +175,24 @@ h4{
 }
 
 .shiftedLeft {
-    background-image: url("logo-alsacreations-com.png"), url("soif.jpg");
-    background-position: right bottom, left top;
+    background-image: url("../images/banderolle2-03.png");
+    &.firstBanderolle{
+        background-image: url("../images/banderolle2-02.png");
+    }
+
+    background-position: left top;
     background-repeat: no-repeat;
     position: relative;
-    left: -60px;
-    background: red;
+    width: 735px;
+    height: 160px;
+    left: -109px;
+    top: -15px;
     padding-left: 90px;
+
+    h3{
+        line-height: 130px;
+        margin-left: 40px;
+    }
 }
 
 .clearing-thumbs {
