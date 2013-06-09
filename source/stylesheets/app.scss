@@ -2,15 +2,15 @@
 
 /* La Cure Site specific */
 div {
-    border: 1px dotted black;
+    //border: 1px dotted black;
 }
 
 #parallax-bg {
     background-color: $sky;
-    background: url("../images/fond_montagne_travail_p.jpg") center 0 repeat fixed
+    background: url("../images/fond_montagne_travail.jpg") center 0 repeat fixed;
     //background-image: url("../images/fond_montagne_travail.jpg");
     //background-position-x: center;
-    //background-position-y: top;
+    background-position-y: -100px;
     //background-attachment: fixed;
 }
 
@@ -20,30 +20,86 @@ div {
     }
 }
 
+h2{
+    font-family: "CopseRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+}
+
+h4{
+    font-family: "CopseRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+    text-align: center;
+}
+
 .row {
-    background-color: white;
+    z-index: 25;
+
     p {
         //text-align: center;
         padding: 00px 10px 0 30px;
     }
+
+    &.sectionBox{
+        background-color: white;
+        background-image: -webkit-linear-gradient(rgba(53,30,9,0.1), rgba(53,30,9,0.3)), url("../images/background.jpg");
+        background-image: -moz-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.4)), url("../images/background.jpg");
+        background-image: -o-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.4)), url("../images/background.jpg");
+        background-image: linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.4)), url("../images/background.jpg");
+        background-repeat: no-repeat, repeat;
+        
+        border-radius: emCalc(10px);
+        margin-bottom: emCalc(60px);
+    }
+    .row {
+        margin: 0;
+    }
+
     &.sectionTitle {
         padding-top: 30px;
+    }
+
+    &.containing{
+        padding: emCalc(20px) 0 0 0;
     }
 }
 
 
 
 .topBar {
-    background: $wood;
-    margin-top: 50px;
+    background: url("../images/fond_planche.png") center repeat-x $wood;
+    margin-top: 30px;
     padding: 20px 0 20px 0;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: emCalc(10px);
+
+    a:hover {
+        color: $sky;
+        -webkit-transition:color 0.25s;
+        -moz-transition:color 0.25s;
+        -o-transition:color 0.25s;
+        transition:color 0.25s;
+    }
+
     nav, div, ul, a, li {
         background: none !important;
     }
+
+    a{
+        text-shadow: 0px -2px 0px rgba( 0, 0, 0, 0.2);
+        -webkit-transition:color 0.25s;
+        -moz-transition:color 0.25s;
+        -o-transition:color 0.25s;
+        transition:color 0.25s;
+    }
+
 }
 
-#slogan {
+#firstRow {
     background: none;
+}
+
+#accroche {
+    margin-top: 20px;
 }
 
 .shiftedLeft {
@@ -70,7 +126,6 @@ div {
 }
 
 .row {
-    z-index: 25;
 }
 
 

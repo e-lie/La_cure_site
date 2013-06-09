@@ -2,131 +2,128 @@
 title: Gîte de la Cure
 ---
 
-%div.row#slogan
-  %div.large-7.columns  
-    %h3 La Famille Longeron vous accueille à l'auberge de la Cure de Maljasset depuis 1969.
+%div.row.containing#firstRow
+  %div.large-7.columns#accroche
+    %h2 La Famille Longeron vous accueille à l'auberge de la Cure de Maljasset depuis 1969.
   %div.large-5.columns  
     %div(class="section-container tabs" data-section="tabs")
       %section.section
         %p.title
           %a=1969
         %div.content
-          %img(src="http://dummyimages.com/400x260")
+          %img(src="images/1969.jpg")
       %section.section
         %p.title
           %a=2013
         %div.content
-          %img(src="http://dummyimages.com/400x250")
+          %img(src="images/hubert_et_klyte.jpg")
 
 
+%div.row.sectionBox
+  %div.row.sectionTitle#auberge
+    %div.large-9.columns
+      %div.shiftedLeft
+        %h3= "L'Auberge"
 
-%div.row.sectionTitle
-  %div.large-9.columns
-    %div.shiftedLeft
-      %h3= "L'auberge"
-
-%div.row
-  %div.large-11.columns.small-centered
-    %h4= "Un gîte d'étape en Haute-Ubaye - Ouvert toute l'année."
-    %hr
-    %p= "Le Gîtes auberge de la Cure est situé dans le village de Maljasset, l'un des plus haut hameaux de la vallée de l'Ubaye. "
-%div.row
-  %div.large-8.columns.small-centered
-    %ul(data-orbit='coucou')
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte1
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte2
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte3
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte4
-%div.row
-  %div.large-9.columns.small-centered
-    %h3= "L'intérieur de l'auberge"
-    %hr
-    %p= "Le Gîtes auberge de la Cure est situé dans le village de Maljasset, l'un des plus haut hameaux de la vallée de l'Ubaye. "
-%div.row
-  %div.large-8.columns.small-centered
-    %ul(data-orbit='coucou')
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte1
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte2
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte3
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte4
+  %div.row.containing
+    %div.large-11.columns.small-centered
+      %h4= "Un gîte d'étape en Haute-Ubaye - Ouvert toute l'année."
+      %p= "Le Gîtes auberge de la Cure est situé dans le village de Maljasset, l'un des plus haut hameaux de la vallée de l'Ubaye. "
+  %div.row
+    %div.large-8.columns.small-centered
+      %ul(data-orbit='coucou')
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte1
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte2
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte3
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte4
+  %div.row
+    %div.large-11.columns.small-centered
+      %h4= "L'intérieur de l'auberge"
+      %p= "Le Gîtes auberge de la Cure est situé dans le village de Maljasset, l'un des plus haut hameaux de la vallée de l'Ubaye. "
+  %div.row.lastRow
+    %div.large-8.columns.small-centered
+      %ul(data-orbit='coucou')
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte1
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte2
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte3
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte4
 
 
 
 
-%div.row.sectionTitle
-  %div.large-9.small-12.columns
-    %div.shiftedLeft
-      %h3= "L'environnement de l'auberge"
+%div.row.sectionBox
+  %div.row.sectionTitle#environnement
+    %div.large-9.small-12.columns
+      %div.shiftedLeft
+        %h3= "L'Environnement de l'auberge"
 
-%div.row
-  %div.large-11.columns.small-centered
-    %h4= "Le village"
-    %hr
-  %div.large-6.columns
-    %p= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus nisi sed enim molestie ut lacinia justo aliquet. Duis felis metus, sollicitudin sit amet bibendum non, sodales et mauris. Aliquam erat volutpat. Nulla facilisi. Nulla facilisi. Curabitur at nisi ac tortor fermentum elementum. Cras massa risus, venenatis vel vehicula eget, pretium adipiscing lacus. Vivamus quis augue eget orci blandit aliquet. Proin non magna magna, a vulputate lectus."
-  %div.large-6.columns.left
-    %ul(data-orbit='')
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte1
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte2
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte3
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte4
-%div.row
-  %div.small-10.columns.small-centered
-    %ul(class="clearing-thumbs" data-clearing)
-      %li
-        %a(class="th" href="http://dummyimages.com/1300x900")
-          %img(src="http://dummyimages.com/100x75")
-      %li
-        %a(class="th" href="http://dummyimages.com/1300x900")
-          %img(src="http://dummyimages.com/100x75")
-      %li
-        %a(class="th" href="http://dummyimages.com/1300x900")
-          %img(src="http://dummyimages.com/100x75")
-      %li
-        %a(class="th" href="http://dummyimages.com/1300x900")
-          %img(src="http://dummyimages.com/100x75")
+  %div.row
+    %div.large-11.columns.small-centered
+      %h4= "Le village"
+    %div.large-6.columns
+      %p= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus nisi sed enim molestie ut lacinia justo aliquet. Duis felis metus, sollicitudin sit amet bibendum non, sodales et mauris. Aliquam erat volutpat. Nulla facilisi. Nulla facilisi. Curabitur at nisi ac tortor fermentum elementum. Cras massa risus, venenatis vel vehicula eget, pretium adipiscing lacus. Vivamus quis augue eget orci blandit aliquet. Proin non magna magna, a vulputate lectus."
+    %div.large-6.columns.left
+      %ul(data-orbit='')
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte1
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte2
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte3
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte4
+  %div.row
+    %div.small-10.columns.small-centered
+      %ul(class="clearing-thumbs" data-clearing)
+        %li
+          %a(class="th" href="http://dummyimages.com/1300x900")
+            %img(src="http://dummyimages.com/100x75")
+        %li
+          %a(class="th" href="http://dummyimages.com/1300x900")
+            %img(src="http://dummyimages.com/100x75")
+        %li
+          %a(class="th" href="http://dummyimages.com/1300x900")
+            %img(src="http://dummyimages.com/100x75")
+        %li
+          %a(class="th" href="http://dummyimages.com/1300x900")
+            %img(src="http://dummyimages.com/100x75")
 
-%div.row
-  %div.large-11.columns.small-centered
-    %h3= "Le massif"
-    %hr
-  %div.large-6.columns
-    %ul(data-orbit='coucou')
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte1
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte2
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte3
-      %li
-        %img{ :src => "http://dummyimages.com/1200x800" }
-        %div.orbit-caption texte4
-  %div.large-6.columns
-    %p= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus nisi sed enim molestie ut lacinia justo aliquet. Duis felis metus, sollicitudin sit amet bibendum non, sodales et mauris. Aliquam erat volutpat. Nulla facilisi. Nulla facilisi. Curabitur at nisi ac tortor fermentum elementum. Cras massa risus, venenatis vel vehicula eget, pretium adipiscing lacus. Vivamus quis augue eget orci blandit aliquet. Proin non magna magna, a vulputate lectus."
+  %div.row
+    %div.large-11.columns.small-centered
+      %h4= "Le massif"
+    %div.large-6.columns
+      %ul(data-orbit='coucou')
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte1
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte2
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte3
+        %li
+          %img{ :src => "http://dummyimages.com/1200x800" }
+          %div.orbit-caption texte4
+    %div.large-6.columns
+      %p= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus nisi sed enim molestie ut lacinia justo aliquet. Duis felis metus, sollicitudin sit amet bibendum non, sodales et mauris. Aliquam erat volutpat. Nulla facilisi. Nulla facilisi. Curabitur at nisi ac tortor fermentum elementum. Cras massa risus, venenatis vel vehicula eget, pretium adipiscing lacus. Vivamus quis augue eget orci blandit aliquet. Proin non magna magna, a vulputate lectus."
