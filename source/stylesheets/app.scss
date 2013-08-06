@@ -7,7 +7,7 @@ div {
 
 #parallax-bg {
     background-color: $sky;
-    background: url("../images/fond_montagne_travail.jpg") center 0 repeat fixed;
+    background: url("../images/photos/fond1.jpg") center 0 repeat fixed;
     //background-image: url("../images/fond_montagne_travail.jpg");
     //background-position-x: center;
     background-position-y: -100px;
@@ -16,25 +16,47 @@ div {
 
 
 #panorama {
-    background-image: url("../images/panobasenew5.jpg"), url("../images/papier_tex.jpg");
+    background-image: url("../images/panorama-accueil.jpg");
+    background-color: white;
     background-repeat: no-repeat, repeat;
     background-position: center;
     height: 700px;
 }
 
 #entryButton {
-    border-radius: 15px;
-    margin: 200px auto;
-
-    display: block;
-    width: 300px;
 }
 
 #enterSite {
-    background-image: url("../images/banderole-02.png"), url("../images/banderole-refs.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center top, center bottom;
-    height: 700px;
+        #panneau {
+            text-align: center;
+            margin: 30px auto 400px auto;
+            padding: 10px;
+            width: 600px;
+            
+            background: url("../images/fond_planche2.jpg") center repeat $wood;
+            display: block;
+            border-radius: emCalc(15px);
+
+            text-shadow: 0px -3px 0px rgba( 0, 0, 0, 0.3);
+            box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+
+            a{
+                color: white;
+                font-size: 1.2em;
+                &:hover {
+                    color: $sky;
+                    -webkit-transition:color 0.25s;
+                    -moz-transition:color 0.25s;
+                    -o-transition:color 0.25s;
+                    transition:color 0.25s;
+                }
+            }
+            
+            h1{
+                color: white;
+            }
+        }
+            
 }
 
 
@@ -45,12 +67,12 @@ div {
 }
 
 h2{
-    font-family: "CopseRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+    font-family: "PlaytimeRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
 }
 
 h4{
     margin-bottom: emCalc(15px);
-    font-family: "CopseRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+    font-family: "PlaytimeRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
     text-align: center;
 }
 
@@ -64,10 +86,11 @@ h4{
 
     &.sectionBox{
         background-color: white;
-        background-image: url("../images/texture-rondin2.png"), -webkit-linear-gradient(rgba(53,30,9,0.1), rgba(53,30,9,0.3)), url("../images/background.jpg");
-        background-image: -moz-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.4)), url("../images/background.jpg");
-        background-image: -o-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.4)), url("../images/background.jpg");
-        background-image: linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.4)), url("../images/background.jpg");
+        //background-image: url("../images/texture-rondin2.png"), -webkit-linear-gradient(rgba(53,30,9,0.1), rgba(53,30,9,0.3)), url("../images/background.jpg");
+        background-image: url("../images/texture-rondin2.png"), -webkit-linear-gradient(rgba(255,255,255,0.2), rgba(40,10,0,0.4)), url("../images/background.jpg");
+        background-image: url("../images/texture-rondin2.png"), -moz-linear-gradient(rgba(255,255,255,0.2), rgba(40,10,0,0.4)), url("../images/background.jpg");
+        background-image: url("../images/texture-rondin2.png"), -o-linear-gradient(rgba(255,255,255,0.2), rgba(40,10,0,0.4)), url("../images/background.jpg");
+        background-image: url("../images/texture-rondin2.png"), linear-gradient(rgba(255,255,255,0.2), rgba(40,10,0,0.4)), url("../images/background.jpg");
         background-repeat: repeat-y, no-repeat, repeat;
         background-position: 0 50px, 0 0, 0 0;
         
@@ -118,6 +141,10 @@ h4{
         -moz-transition:color 0.25s;
         -o-transition:color 0.25s;
         transition:color 0.25s;
+    }
+
+    &.name{
+        font-size: emCalc(17px);
     }
 
     nav, div, ul, a, li {
@@ -179,7 +206,6 @@ a.menuLink{
     }
 
     .content{
-        width:285px;
         border-radius: 0 emCalc(8px) emCalc(8px) emCalc(8px);
         border: none !important;
         box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2);
@@ -205,7 +231,8 @@ a.menuLink{
     box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
 
     .orbit-caption{
-        color: rgba(80, 80, 80, 1) !important;
+        color: rgba(30, 30, 30, 1) !important;
+        text-align: center !important;
         background-color: rgba(255, 255, 255, 0.4) !important;
         font-size: 0.9em !important;
     }
@@ -240,7 +267,7 @@ h2 {
 
 h3 {
     color: rgba(255, 246, 225, 1);
-    font-family: "CopseRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
+    font-family: "PlaytimeRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; 
     text-shadow: 0px -2px 2px rgba( 255, 255, 255, 0.5);
 }
 

@@ -3,20 +3,20 @@ title: Gîte de la Cure
 ---
 
 %div.row#firstRow
-  %div.large-7.columns#accroche
-    %h2 La Famille Longeron vous accueille à l'auberge de la Cure de Maljasset depuis 1969. <br/> -- SITE EN COURS DE REALISATION --
-  %div.large-5.columns  
+  %div.large-6.columns#accroche
+    %h2 La Famille Longeron vous accueille à l'auberge de la Cure de Maljasset depuis 1986. 
+  %div.large-6.columns  
     %div(class="section-container tabs" data-section="tabs")
-      %section.section
-        %p.title
-          %a=1969
-        %div.content
-          %img(src="images/1969.jpg")
       %section.section
         %p.title
           %a=2013
         %div.content
-          %img(src="images/hubert_et_klyte.jpg")
+          %img(src="images/photos/famille2013.jpg" width="700" height="472")
+      %section.section
+        %p.title
+          %a=1986
+        %div.content
+          %img(src="images/photos/famille1982.jpg")
 
 
 %div.row.sectionBox
@@ -27,46 +27,52 @@ title: Gîte de la Cure
 
   %div.row.containing
     %div.large-11.columns.small-centered
-      %h4= "Un gîte à 1900 mètres d'altitude."
-      %p= "L'auberge de la Cure est un gîte d'étape ou de séjour en Haute-Ubaye, situé dans le village de Maljasset, le dernier hameau de St Paul en remontant la vallée de l'Ubaye, à environ 1900m d'altitude." "<br/>" "Nous sommes ouvert toute l'année et pouvons accueillir jusqu'à 26 personnes."
-      %p= "Gîte de France depuis ????, l'auberge est également recommandée par le guide du routard depuis de nombreuses années."
+      %p= "L'auberge de la Cure est un gîte d'étape ou de séjour en Haute-Ubaye, situé dans le hameau de Maljasset." "</br>" "Cette auberge a été fondée en 1986 par Michel et Marie-Rose Longeron, reprise en 2007 par leur fils Hubert et son épouse Klyte, qui perpétuent la tradition d’un accueil chaleureux en montagne, en hiver comme en été." 
+
   %div.row.containing
-    %div.large-8.columns.small-centered
-      %ul(data-orbit='coucou' data-options="timer_speed:2500; bullets:false;")
+    %div.large-11.columns.small-centered
+      %ul(data-orbit='' data-options="timer_speed:2500; bullets:false;")
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption Devant l'auberge.
+          %img{ :src => "images/photos/gite-face.jpg" }
+          %div.orbit-caption Devant l'auberge
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption Notre panneau au milieu du village.
+          %img{ :src => "images/photos/gite-facade.jpg" }
+          %div.orbit-caption
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption Vue des environs en été. Au fond, le Panestrel 3254 mètres.
+          %img{ :src => "images/photos/panneau-entree.jpg" }
+          %div.orbit-caption L'auberge est ouvert toute l'année !
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption La terrasse.
+          %img{ :src => "images/photos/gite-derriere.jpg" }
+          %div.orbit-caption
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption L'auberge en hivers.
+          %img{ :src => "images/photos/gite-hivers.jpg" }
+          %div.orbit-caption En décembre après une chute de neige
+        %li
+          %img{ :src => "images/photos/terasse-droite.jpg" }
+          %div.orbit-caption La terrasse à droite de l'auberge
   %div.row.containing#interieur
     %div.large-11.columns.small-centered
-      %h4= "L'intérieur de l'auberge"
-      %p= "(Ici, il faudrait peut être des informations sur le bâtiment, une petite histoire)"
+      %h4= "Cuisine"
+      %p= "Avant de revenir s'installer dans la vallée de l'Ubaye, Hubert a fait carrière comme cuisinier dans l'hotellerie de luxe, de Monaco à l'Australie en passant par la Suisse et l'Espagne. A l'auberge de la Cure on ne plaisante pas avec la cuisine !"
+      %h4= "Hébergement"
+      %p= "Quatres dortoirs pour un total de 26 places:"
+      %ul.padded 
+        %li= "trois de six places avec sanitaires incorporés (douche w-c, lavabo)"
+        %li= "un de huit places avec sanitaire independant"
+      %p= "une salle à manger voûtee."
+      %p= "une terrasse ensoleillee."
   %div.row.lastRow.containing
-    %div.large-8.columns.small-centered
-      %ul(data-orbit='coucou')
+    %div.large-11.columns.small-centered
+      %ul(data-orbit='')
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption &Agrave l'entrée
+          %img{ :src => "images/photos/entree-gite.jpg" }
+          %div.orbit-caption En entrant
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption Notre panneau au milieu du village.
+          %img{ :src => "images/photos/salle-a-manger.jpg" }
+          %div.orbit-caption La salle à manger
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption Vue des environs en été. Au fond, le Panestrel 3254 mètres.
-        %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption L'auberge en hivers.
+          %img{ :src => "images/photos/dortoir1.jpg" }
+          %div.orbit-caption L'un des dortoirs à l'étage
 
 %div.row.separator
 
@@ -78,58 +84,82 @@ title: Gîte de la Cure
 
   %div.row#village
     %div.large-11.columns.small-centered
-      %h4= "Le village de Maljasset"
-    %div.large-6.columns
-      %p= "(Ici il faudrait parler du village, chercher quelques éléments d'histoire (je n'en ai pas trouvé sur le net))"
-    %div.large-6.columns.left
+      %h4= "Le hameau de Maljasset"
+      %p="Situé au fond de la vallée de Maurin, à 1900 mètres d’altitude, Maljasset est au bord de l’Ubaye dans un vallon plat issu de glaciers depuis longtemps disparus. Ce hameau est un point de départ de randonnées pédestres, de promenades à cheval, en vélo, en raquettes ou en ski l'hiver (fond et randonnée). Maljasset offre un cadre majestueux comme base pour ces activités ; c'est également une étape réputée de la Traversée des Alpes et de raids à ski."
+    %div.large-11.columns.small-centered
       %ul(data-orbit='')
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption L'entrée du village
+          %img{ :src => "images/photos/depuis-la-route.jpg" }
+          %div.orbit-caption Depuis la route
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption la rue principale.
+          %img{ :src => "images/photos/eglise-vue-du-jardin.jpg" }
+          %div.orbit-caption L'église vue du jardin 
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption ...
+          %img{ :src => "images/photos/sortie-village2.jpg" }
+          %div.orbit-caption En arrivant du haut de la vallée
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption L'église.
-  %div.row.containing
-    %div.small-10.columns.small-centered
-      %ul(class="clearing-thumbs" data-clearing)
+          %img{ :src => "images/photos/cadran2.jpg" }
+          %div.orbit-caption Le cadran solaire de la rue principale
         %li
-          %a(class="th" href="http://dummyimages.com/1300x900")
-            %img(src="http://dummyimages.com/100x75")
+          %img{ :src => "images/photos/rue-principale-neige.jpg" }
+          %div.orbit-caption La rue principale sous la neige
         %li
-          %a(class="th" href="http://dummyimages.com/1300x900")
-            %img(src="http://dummyimages.com/100x75")
+          %img{ :src => "images/photos/sortie-village.jpg" }
+          %div.orbit-caption 
         %li
-          %a(class="th" href="http://dummyimages.com/1300x900")
-            %img(src="http://dummyimages.com/100x75")
+          %img{ :src => "images/photos/vallee-neige.jpg" }
+          %div.orbit-caption La vallée enneigée
         %li
-          %a(class="th" href="http://dummyimages.com/1300x900")
-            %img(src="http://dummyimages.com/100x75")
+          %img{ :src => "images/photos/eglise-cote.jpg" }
+          %div.orbit-caption L'église de maljasset
 
   %div.row.containing#region
+
     %div.large-11.columns.small-centered
-      %h4= "La vallée de l'ubaye et le massif du Chambeyron"
-    %div.large-6.columns
-      %ul(data-orbit='coucou')
+      %h4= "La vallée de l'Ubaye"
+      %p= "Située au Nord des Alpes de Haute Provence, enclavée entre le Queyras, le parc du Mercantour et l’Italie, la vallée de l’Ubaye reçoit un ensoleillement exceptionnel (au moins 300 jours/an), et un enneigement dont ses stations de ski témoignent (Pra-Loup, Vars-Risoul, Sainte-Anne-La Condamine, le Sauze et le Super-Sauze)."
+
+    %div.large-11.columns.small-centered
+      %ul(data-orbit='')
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption texte1
+          %img{ :src => "images/photos/entree-vallon2.jpg" }
+          %div.orbit-caption Entrée du vallon de Mary
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption texte2
+          %img{ :src => "images/photos/riviere.jpg" }
+          %div.orbit-caption L'Ubaye
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption texte3
+          %img{ :src => "images/photos/entree-vallon1.jpg" }
+          %div.orbit-caption Départ de randonnée
         %li
-          %img{ :src => "http://dummyimages.com/1200x800" }
-          %div.orbit-caption texte4
-    %div.large-6.columns
-      %p= "(Présentation du massif et de quelques montagnes)"
+          %img{ :src => "images/photos/fleur-vallee.jpg" }
+          %div.orbit-caption 
+        %li
+          %img{ :src => "images/photos/aiguille-large-fleurs.jpg" }
+          %div.orbit-caption L'Aiguille Large
+        %li
+          %img{ :src => "images/photos/vallee-aube.jpg" }
+          %div.orbit-caption En montant dans la haute-vallée de l'Ubaye
+        %li
+          %img{ :src => "images/photos/deux-aiguilles.jpg" }
+          %div.orbit-caption L'Aiguille Large et la Pierre André 
+        %li
+          %img{ :src => "images/photos/aiguilles-chambeyron.jpg" }
+          %div.orbit-caption Les Aiguilles du Chambeyron (plus haut sommet de la vallée 3412 m)
+        %li
+          %img{ :src => "images/photos/aiguilles-chambeyron2.jpg" }
+          %div.orbit-caption Les Aiguilles en hivers 
+        %li
+          %img{ :src => "images/photos/blaireau.jpg" }
+          %div.orbit-caption Un blaireau à Maljasset
+        %li
+          %img{ :src => "images/photos/bouquetins.jpg" }
+          %div.orbit-caption Un groupe de bouquetins au dessus du hameau
+        %li
+          %img{ :src => "images/photos/fleur.jpg" }
+          %div.orbit-caption Une aster des alpes
+
+    %div.large-11.columns.small-centered
+      %p= "Cette vallée dynamique offre un cadre idéal pour vos vacances : randonnées, escalade, VTT, descente de rivière, pêche en lac d’altitude et torrents, activités naturalistes (faune et flore exceptionnelles, géologie), activités pour la famille (plan d’eau, accro-branche, luge d’été), événements culturels (festivals de musique, exposition), visites de monuments ou de cadrans solaires, des musées de la Vallée..."
 
 %div.row.separator
 
@@ -141,14 +171,31 @@ title: Gîte de la Cure
 
   %div.row.containing
     %div.large-11.columns.small-centered
-      %h4= "Nous saurons vous conseiller efficacement pour vos activités de montagne."
-      %ul.padded
-        %li= "Enclavée entre le Parc du Queyras (Col Girardin : Ceillac, Col de la Noire : St-Véran) et l'Italie (Col Longet : Chianale, Col de Mary : Chiappera), la Vallée de Maljasset-Maurin offre de très belles randonnées à pied, à ski ou en raquettes, vers les lacs de Marinet, du Roure ou du Longet ;"
-        %li= "Une piste de ski de fond et raquettes tracée de 6km ;" 
-        %li= "De l'escalade dans le massif de la Pierre-André et des Aiguilles de Chambeyron avec égakement deux écoles d'escalade à proximité ;" 
-        %li= "Cascade de Glace, parcours VTT, pêche en torrent ou en lac de montagne." 
-        %li= "Flore, faune et géologie exceptionnelle ;" 
-        %li= "proximité du GR5, nombreux sentiers PR balisés."
+      %ul(data-orbit='')
+        %li
+          %img{ :src => "images/photos/randonnee.jpg" }
+          %div.orbit-caption Un randonneur entre Mont-Dauphin et Maljasset
+        %li
+          %img{ :src => "images/photos/escalade.jpg" }
+          %div.orbit-caption L'Aiguille Pierre André, magnifique sommet équipé pour l'escalade. 
+        %li
+          %img{ :src => "images/photos/vtt.jpg" }
+          %div.orbit-caption  
+        %li
+          %img{ :src => "images/photos/ski-rando.jpg" }
+          %div.orbit-caption Le tour de l'Aiguille Large en ski de randonnée
+
+    %div.large-11.columns.small-centered
+      %h4= "Randonnée pédestre pour tous les âges et tous les niveaux"
+      %p= "Étape importante du GR5, Maljasset est situé sur la Via Alpina, sur le tour de l’Ubaye ou du Haut Piémont, sur le tour du Queyras ou, plus réduit, celui de la Font-Sancte. De nombreuses randonnées à la journée rayonnent également autour de Maljasset."
+      %h4="Escalade"
+      %p= "Le vallon de Maurin est un haut lieu de l’escalade, avec des sommets tels que l’aiguille Pierre-André, ou les Aiguilles du Chambeyron et de nombreuses voies de toutes difficultés dans l’Aiguille Large, la tête de Sanglier ou les Rochers Rouges, le Péouvoux, etc. Une quantité de choix qui justifient probablement plusieurs séjours !"
+      %h4="VTT"
+      %p= "Lieu unique de randonnées en VTT , le vallon de Maurin est particulièrement réputé pour ses parcours transfrontaliers pour vététistes confirmés."
+      %h4="Ski de randonnée"
+      %p= "Bénéficiant d’une réputation internationale, Maljasset est le départ de nombreuses randonnées à ski (tour de l’Aiguille Large, Font-Sancte, Col de Mary, Marinet, vallon du Longet, ...) qui permet à des groupes de niveaux variés de partager un même gîte."
+      %h4="Ski de fond et randonnée à raquette"
+      %p= "Le fond de vallée offre un cadre idéal à de nombreuses promenades en raquettes, ainsi qu'une piste de ski de fond entretenue d'environ 6 km."
 
 %div.row.separator
 
@@ -158,15 +205,8 @@ title: Gîte de la Cure
       %div.shiftedLeft
         %h3= "Informations diverses"
 
-  %div.row.containing#hebergement
+  %div.row.containing#tarifs
     %div.large-11.columns.small-centered
-      %h4= "Hébergement"
-      %p= "Quatres dortoirs pour un total de 26 places:"
-      %ul.padded 
-        %li= "trois de six places avec sanitaires incorporés (douche w-c, lavabo)"
-        %li= "un de huit places avec sanitaire independant"
-      %p= "une salle à manger voûtee."
-      %p= "une terrasse ensoleillee."
 
       %h4= "tarif 2013"
       %p= "Demi-pension (uniquement): 35-€ <br/> Incluant Repas du soir, Nuitée, douche, Petit Déjeuner et Taxe de Séjour (0,24 €)."
@@ -178,10 +218,9 @@ title: Gîte de la Cure
     %div.row.containing#meteo
     %div.large-11.columns.small-centered
       %h4= "Météo"
-      %p= "Observateurs Météo depuis  42 ans et pratiquant régulièrement la montagne, demandez-nous les conditions du moment et les risques éventuels surtout en hiver, nous vous informerons avec la plus grande rigueur."
-      %p= "Dernière MISE à JOUR du 28 mai 2013"
-      %p= "Pour la saison  les conditions d'enneigement sont super le matin très tôt. La neige est transformée et il faut porter depuis Maljasset. Il y a encore trop de neige en altitude pour traverser les cols. La saison d'été va bientôt commencer et nous espérons de belles journées."
-      %p= "Pour les questions relatives à la sécurité : téléphonez à Météo-France :  N°0836680205 ou meteo.fr"
+      %p= "Observateurs Météo depuis de nombreuses années et pratiquant régulièrement la montagne, demandez-nous les conditions du moment et les risques éventuels surtout en hiver, nous vous informerons avec la plus grande rigueur."
+      
+      %p= "Pour vous informer dès maintenant ou pour des questions relatives à la sécurité : téléphonez à Météo-France :  N°0836680205 ou meteo.fr"
 
     %div.row.containing#enneigement
     %div.large-11.columns.small-centered
