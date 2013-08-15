@@ -5019,7 +5019,7 @@ table {
 /* line 8, app.scss */
 #parallax-bg {
   background-color: #8fbfef;
-  background: url("../images/photos/fond1.jpg") center 0 repeat fixed;
+  background: url("../images/photos/fond1.jpg") center 0 repeat fixed, url("../images/photos/fond1_p.jpg") center 0 repeat fixed;
   background-position-y: -100px; }
 
 /* line 18, app.scss */
