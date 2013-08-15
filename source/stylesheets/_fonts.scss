@@ -46,4 +46,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'PlaytimeRegular';
+    src: url('fonts/playtime-webfont.eot');
+    src: url('fonts/playtime-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/playtime-webfont.woff') format('woff'),
+         url('fonts/playtime-webfont.ttf') format('truetype'),
+         url('fonts/playtime-webfont.svg#fonts/PlaytimeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
