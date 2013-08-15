@@ -6,20 +6,24 @@ div {
 }
 
 #parallax-bg {
-    background-color: $sky;
-    background: url("../images/photos/fond1.jpg") fixed, url("../images/photos/fond1_p.jpg") fixed;
-    //background-image: url("../images/fond_montagne_travail.jpg");
-    //background-position-x: center;
-    background-position-y: -100px;
-    //background-attachment: fixed;
+    background-color: rgba(104, 155, 236, 1);
+    background-image: url("../images/photos/fond1.jpg"), url("../images/photos/fond1_p.jpg"), none;
+    background-repeat: repeat, repeat, repeat;
+    background-clip: border-box, border-box, border-box;
+    background-attachment: fixed, fixed, fixed;
+    background-position: 0% -100px, 0% -100px, 0% -100px;
+    background-origin: padding-box, padding-box, padding-box;
+    background-size: 1920px 2400px;
 }
 
 
 #panorama {
-    background-image: url("../images/panorama-accueil.jpg");
     background-color: white;
-    background-repeat: no-repeat, repeat;
-    background-position: center;
+    background-image: url("../images/panorama-accueil.jpg");
+    background-repeat: repeat-x;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 1920px 700px;
     height: 700px;
 }
 
@@ -85,7 +89,7 @@ h4{
     }
 
     &.sectionBox{
-        background-color: white;
+        background-color: rgb(234, 222, 206);
         //background-image: url("../images/texture-rondin2.png"), -webkit-linear-gradient(rgba(53,30,9,0.1), rgba(53,30,9,0.3)), url("../images/background.jpg");
         background-image: url("../images/texture-rondin2.png"), -webkit-linear-gradient(rgba(255,255,255,0.2), rgba(40,10,0,0.4)), url("../images/background.jpg");
         background-image: url("../images/texture-rondin2.png"), -moz-linear-gradient(rgba(255,255,255,0.2), rgba(40,10,0,0.4)), url("../images/background.jpg");
@@ -316,6 +320,8 @@ h3 {
     .finRondin{
         background: url("../images/texture-rondin2.png") repeat-y;
         height: 344px;
+        padding-top: 280px;
+        padding-left: 50px;
     }
 
 }
