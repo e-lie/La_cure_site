@@ -5,6 +5,11 @@ div {
     //border: 1px dotted black;
 }
 
+html {
+    height: 100%; // pour que le body fasse 100% de la hauteur de l'écran il faut mettre aussi le html à 100%.
+    // C'est important ici pour #panorama pour que le background-size : cover couvre l'écran aussi en hauteur.
+}
+
 #parallax-bg {
     background-color: rgba(104, 155, 236, 1);
     background-image: url("../images/photos/fond1.jpg"), url("../images/photos/fond1_p.jpg"), none;
@@ -19,21 +24,26 @@ div {
 
 #panorama {
     background-color: white;
-    background-image: url("../images/panorama-accueil.jpg");
-    background-repeat: repeat-x;
+    background-image: url("../images/photos/panorama-accueil.jpg");
+    background-repeat: no-repeat;
     background-clip: border-box;
+    background-position: 50% 50%;
     background-origin: padding-box;
-    background-size: 1920px 700px;
-    height: 700px;
+    background-size: cover;
+    height: 100%;
 }
 
-#entryButton {
+#entryButtons {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -450px;
 }
 
 #enterSite {
         #panneau {
             text-align: center;
-            margin: 30px auto 400px auto;
+            margin: 30px auto 50px auto;
             padding: 10px;
             width: 600px;
             

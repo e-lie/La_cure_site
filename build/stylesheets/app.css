@@ -5017,6 +5017,10 @@ table {
     margin-right: 0px; } }
 /* La Cure Site specific */
 /* line 8, app.scss */
+html {
+  height: 100%; }
+
+/* line 13, app.scss */
 #parallax-bg {
   background-color: #689bec;
   background-image: url("../images/photos/fond1.jpg"), url("../images/photos/fond1_p.jpg"), none;
@@ -5027,20 +5031,28 @@ table {
   background-origin: padding-box, padding-box, padding-box;
   background-size: 1920px 2400px; }
 
-/* line 20, app.scss */
+/* line 25, app.scss */
 #panorama {
   background-color: white;
-  background-image: url("../images/panorama-accueil.jpg");
-  background-repeat: repeat-x;
+  background-image: url("../images/photos/panorama-accueil.jpg");
+  background-repeat: no-repeat;
   background-clip: border-box;
+  background-position: 50% 50%;
   background-origin: padding-box;
-  background-size: 1920px 700px;
-  height: 700px; }
+  background-size: cover;
+  height: 100%; }
 
-/* line 34, app.scss */
+/* line 36, app.scss */
+#entryButtons {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -450px; }
+
+/* line 44, app.scss */
 #enterSite #panneau {
   text-align: center;
-  margin: 30px auto 400px auto;
+  margin: 30px auto 50px auto;
   padding: 10px;
   width: 600px;
   background: url("../images/fond_planche2.jpg") center repeat #c1782e;
@@ -5048,42 +5060,42 @@ table {
   border-radius: 0.78947em;
   text-shadow: 0px -3px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3); }
-  /* line 47, app.scss */
+  /* line 57, app.scss */
   #enterSite #panneau a {
     color: white;
     font-size: 1.2em; }
-    /* line 50, app.scss */
+    /* line 60, app.scss */
     #enterSite #panneau a:hover {
       color: #8fbfef;
       -webkit-transition: color 0.25s;
       -moz-transition: color 0.25s;
       -o-transition: color 0.25s;
       transition: color 0.25s; }
-  /* line 59, app.scss */
+  /* line 69, app.scss */
   #enterSite #panneau h1 {
     color: white; }
 
-/* line 68, app.scss */
+/* line 78, app.scss */
 .section-container.tabs p {
   background-color: red; }
 
-/* line 73, app.scss */
+/* line 83, app.scss */
 h2 {
   font-family: "PlaytimeRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-/* line 77, app.scss */
+/* line 87, app.scss */
 h4 {
   margin-bottom: 0.78947em;
   font-family: "PlaytimeRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   text-align: center; }
 
-/* line 83, app.scss */
+/* line 93, app.scss */
 .row {
   z-index: 25; }
-  /* line 86, app.scss */
+  /* line 96, app.scss */
   .row p {
     padding: 00px 10px 0 30px; }
-  /* line 91, app.scss */
+  /* line 101, app.scss */
   .row.sectionBox {
     background-color: #eadece;
     background-image: url("../images/texture-rondin2.png"), -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(40, 10, 0, 0.4)), url("../images/background.jpg");
@@ -5095,22 +5107,22 @@ h4 {
     border-radius: 0.52632em 0.52632em 0.52632em 0;
     box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
     padding-left: 3.47368em; }
-  /* line 107, app.scss */
+  /* line 117, app.scss */
   .row.separator {
     height: 90px;
     background: url("../images/texture-rondin2.png") repeat-y;
     background-position: 0 128px; }
-  /* line 113, app.scss */
+  /* line 123, app.scss */
   .row .row {
     margin: 0; }
-  /* line 120, app.scss */
+  /* line 130, app.scss */
   .row.containing {
     padding: 0 0 1.57895em 0; }
-    /* line 122, app.scss */
+    /* line 132, app.scss */
     .row.containing ul.padded {
       padding: 0 10px 0 50px; }
 
-/* line 132, app.scss */
+/* line 142, app.scss */
 .topBar {
   background: url("../images/fond_planche.jpg") center repeat #c1782e;
   margin-top: 30px;
@@ -5120,25 +5132,25 @@ h4 {
   margin-right: auto;
   border-radius: 0.52632em;
   box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3); }
-  /* line 142, app.scss */
+  /* line 152, app.scss */
   .topBar a:hover {
     color: #8fbfef;
     -webkit-transition: color 0.25s;
     -moz-transition: color 0.25s;
     -o-transition: color 0.25s;
     transition: color 0.25s; }
-  /* line 150, app.scss */
+  /* line 160, app.scss */
   .topBar.name {
     font-size: 0.89474em; }
-  /* line 154, app.scss */
+  /* line 164, app.scss */
   .topBar nav, .topBar div, .topBar ul, .topBar a, .topBar li {
     background: none !important; }
-    /* line 156, app.scss */
+    /* line 166, app.scss */
     .topBar nav .dropdown, .topBar div .dropdown, .topBar ul .dropdown, .topBar a .dropdown, .topBar li .dropdown {
       background: url("../images/dropdown-bg.jpg") !important;
       border-radius: 0.52632em;
       box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3); }
-  /* line 163, app.scss */
+  /* line 173, app.scss */
   .topBar a {
     text-shadow: 0px -2px 0px rgba(0, 0, 0, 0.2);
     -webkit-transition: color 0.25s;
@@ -5146,7 +5158,7 @@ h4 {
     -o-transition: color 0.25s;
     transition: color 0.25s; }
 
-/* line 173, app.scss */
+/* line 183, app.scss */
 a.menuLink {
   opacity: 0;
   display: block;
@@ -5168,7 +5180,7 @@ a.menuLink {
   -moz-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s; }
-  /* line 196, app.scss */
+  /* line 206, app.scss */
   a.menuLink.show {
     display: block;
     opacity: 1;
@@ -5177,72 +5189,72 @@ a.menuLink {
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s; }
 
-/* line 208, app.scss */
+/* line 218, app.scss */
 .tabs.section-container {
   margin: 1em 0 1em 0; }
-/* line 212, app.scss */
+/* line 222, app.scss */
 .tabs .content {
   border-radius: 0 0.42105em 0.42105em 0.42105em;
   border: none !important;
   box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.2); }
-  /* line 217, app.scss */
+  /* line 227, app.scss */
   .tabs .content img {
     border-radius: 0.26316em; }
-/* line 222, app.scss */
+/* line 232, app.scss */
 .tabs p {
   border-radius: 0.42105em 0.42105em 0 0;
   border: none !important; }
-  /* line 225, app.scss */
+  /* line 235, app.scss */
   .tabs p a {
     color: grey !important;
     font-weight: bold !important; }
 
-/* line 232, app.scss */
+/* line 242, app.scss */
 .orbit-container {
   border: 0.78947em solid white;
   border-radius: 10px;
   box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3); }
-  /* line 237, app.scss */
+  /* line 247, app.scss */
   .orbit-container .orbit-caption {
     color: #1e1e1e !important;
     text-align: center !important;
     background-color: rgba(255, 255, 255, 0.4) !important;
     font-size: 0.9em !important; }
-  /* line 244, app.scss */
+  /* line 254, app.scss */
   .orbit-container a.orbit-prev, .orbit-container a.orbit-next {
     border-radius: 30px;
     background: none; }
-  /* line 249, app.scss */
+  /* line 259, app.scss */
   .orbit-container a.orbit-prev:hover, .orbit-container a.orbit-next:hover {
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.3); }
-  /* line 254, app.scss */
+  /* line 264, app.scss */
   .orbit-container .orbit-progress {
     display: none !important; }
-  /* line 258, app.scss */
+  /* line 268, app.scss */
   .orbit-container .orbit-slide-number {
     display: none !important; }
 
-/* line 263, app.scss */
+/* line 273, app.scss */
 #firstRow {
   background: none; }
 
-/* line 267, app.scss */
+/* line 277, app.scss */
 h2 {
   color: white;
   text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2); }
 
-/* line 272, app.scss */
+/* line 282, app.scss */
 h3 {
   color: #fff6e1;
   font-family: "PlaytimeRegular", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   text-shadow: 0px -2px 2px rgba(255, 255, 255, 0.5); }
 
-/* line 278, app.scss */
+/* line 288, app.scss */
 #accroche {
   margin-top: 20px; }
 
-/* line 282, app.scss */
+/* line 292, app.scss */
 .shiftedLeft {
   background-image: url("../images/banderolle2-03.png");
   background-position: left top;
@@ -5253,32 +5265,32 @@ h3 {
   left: -128px;
   top: -15px;
   padding-left: 90px; }
-  /* line 284, app.scss */
+  /* line 294, app.scss */
   .shiftedLeft.firstBanderolle {
     background-image: url("../images/banderolle2-02.png"); }
-  /* line 297, app.scss */
+  /* line 307, app.scss */
   .shiftedLeft h3 {
     line-height: 130px;
     margin-left: 40px; }
 
-/* line 303, app.scss */
+/* line 313, app.scss */
 .clearing-thumbs {
   list-style: none outside none; }
-  /* line 305, app.scss */
+  /* line 315, app.scss */
   .clearing-thumbs li {
     float: left;
     margin: 10px; }
 
-/* line 312, app.scss */
+/* line 322, app.scss */
 #panorama {
   z-index: 20; }
 
-/* line 316, app.scss */
+/* line 326, app.scss */
 .footer {
   background: url("../images/fond-footer.png") repeat-x center;
   height: 344px;
   width: 100%; }
-  /* line 320, app.scss */
+  /* line 330, app.scss */
   .footer .finRondin {
     background: url("../images/texture-rondin2.png") repeat-y;
     height: 344px;
